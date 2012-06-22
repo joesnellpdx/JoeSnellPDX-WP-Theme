@@ -75,7 +75,7 @@
           <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active">
+              <!-- <li class="active">
                 <a href="./index.html">Overview</a>
               </li>
               <li class="">
@@ -99,7 +99,7 @@
               </li>
               <li class="">
                 <a href="./examples.html">Examples</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -116,9 +116,9 @@
 			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1><?php bloginfo( 'name' ); ?></h1></a>
 			<p><?php bloginfo( 'description' ); ?></p>
             <p class="download-info">
-      <a href="https://github.com/twitter/bootstrap/" class="btn btn-primary btn-large" >View project on GitHub</a>
+      <!-- <a href="https://github.com/twitter/bootstrap/" class="btn btn-primary btn-large" >View project on GitHub</a>
       <a href="assets/bootstrap.zip" class="btn btn-large" >Download Bootstrap <small>(v2.0.4)</small></a>
-    </p>
+    </p> -->
 		</hgroup>
        
         </div>  <!-- .inner -->
