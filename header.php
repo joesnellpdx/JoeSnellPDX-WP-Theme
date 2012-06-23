@@ -120,7 +120,7 @@
 			<p><?php bloginfo( 'description' ); ?></p>
             <p class="download-info">
        <a href="https://github.com/joesnellpdx/JoeSnellPDX-WP-Theme" class="btn btn-primary btn-large" >View project on GitHub</a>
-      <a href="http://www.joesnellpdx.com/posts/" class="btn btn-large" >View Posts <small>(v2.0.4)</small></a>
+      <a href="http://www.joesnellpdx.com/posts/" class="btn btn-large" >View Posts <small>(More on the Way)</small></a>
     </p> 
 		</hgroup>
        
