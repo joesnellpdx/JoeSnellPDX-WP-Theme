@@ -74,8 +74,11 @@
           </button>
           <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-              <!-- <li class="active">
+            
+            	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+        	
+            <!-- <ul class="nav">
+               <li class="active">
                 <a href="./index.html">Overview</a>
               </li>
               <li class="">
@@ -128,7 +131,7 @@
 			<h4 class="assistive-text quick-links"><?php _e( 'Menu', 'joesnellpdx' ); ?></h4>
 			<div class="assistive-text skip-link quick-links"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'joesnellpdx' ); ?>"><?php _e( 'Skip to content', 'joesnellpdx' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
 		</nav>
         </div> <!-- .bs-links -->
 	</header><!-- #masthead .site-header -->
