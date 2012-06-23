@@ -1,3 +1,160 @@
+
+ExploreGistBlogHelpjoesnellpdx
+Admin Pull Request Unwatch1 Fork1
+PUBLIC joesnellpdx / JoeSnellPDX-WP-Theme
+
+Code
+Network
+Pull Requests 0
+Issues 0
+Wiki
+Graphs
+Tags  Downloads
+branch: master
+Files Commits Branches 1
+JoeSnellPDX-WP-Theme / header.php 
+ joesnellpdx 4 minutes ago Update master
+1 contributor
+100755 139 lines (119 sloc) 5.539 kb RawBlameHistory
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
 <?php
 /**
  * The Header for our theme.
@@ -120,7 +277,7 @@
 			<p><?php bloginfo( 'description' ); ?></p>
             <p class="download-info">
        <a href="https://github.com/joesnellpdx/JoeSnellPDX-WP-Theme" class="btn btn-primary btn-large" >View project on GitHub</a>
-      <a href="http://www.joesnellpdx.com/posts/" class="btn btn-large" >View Posts <small>(More on the Way)</small></a>
+      <a href="http://www.joesnellpdx.com/posts/" class="btn btn-large" >View Posts <small>(v2.0.4)</small></a>
     </p> 
 		</hgroup>
        
@@ -137,3 +294,30 @@
 	</header><!-- #masthead .site-header -->
 
 	<div id="main">
+GitHub Links
+GitHub
+About
+Blog
+Features
+Contact & Support
+Training
+GitHub Enterprise
+Site Status
+Tools
+Gauges: Analyze web traffic
+Speaker Deck: Presentations
+Gist: Code snippets
+GitHub for Mac
+GitHub for Windows
+Issues for iPhone
+Job Board
+Extras
+GitHub Shop
+The Octodex
+Documentation
+GitHub Help
+Developer API
+GitHub Flavored Markdown
+GitHub Pages
+Terms of ServicePrivacySecurity© 2012 GitHub Inc. All rights reserved.Powered by the Dedicated Servers and
+Cloud Computing of Rackspace Hosting® 
