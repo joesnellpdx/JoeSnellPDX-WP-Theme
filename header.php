@@ -119,9 +119,9 @@
 			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1><?php bloginfo( 'name' ); ?></h1></a>
 			<p><?php bloginfo( 'description' ); ?></p>
             <p class="download-info">
-      <!-- <a href="https://github.com/twitter/bootstrap/" class="btn btn-primary btn-large" >View project on GitHub</a>
-      <a href="assets/bootstrap.zip" class="btn btn-large" >Download Bootstrap <small>(v2.0.4)</small></a>
-    </p> -->
+       <a href="https://github.com/joesnellpdx/JoeSnellPDX-WP-Theme" class="btn btn-primary btn-large" >View project on GitHub</a>
+      <a href="http://www.joesnellpdx.com/posts/" class="btn btn-large" >View Posts <small>(v2.0.4)</small></a>
+    </p> 
 		</hgroup>
        
         </div>  <!-- .inner -->
