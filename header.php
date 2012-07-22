@@ -55,6 +55,8 @@
 <![endif]-->
 
 <?php wp_head(); ?>
+<script type="text/javascript" src="http://use.typekit.com/jrw3qjl.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body data-spy="scroll" data-target=".subnav" data-offset="50" <?php body_class(); ?>>
@@ -72,6 +74,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1><?php bloginfo( 'name' ); ?></h1></a>
+          <p><?php bloginfo( 'description' ); ?></p>
           <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
             

@@ -180,23 +180,27 @@
 // NAVIGATION
 // ----------
 
-.navbar .nav {
+.navbar .nav,
+.navbar .menu {
   position: relative;
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 10px	 10px 0 0;
 }
-.navbar .nav.pull-right {
+.navbar .nav.pull-right,
+.navbar .menu.pull-right {
   float: right; // redeclare due to specificity
 }
-.navbar .nav > li {
+.navbar .nav > li,
+.navbar .menu > li {
   display: block;
   float: left;
 }
 
 // Links
-.navbar .nav > li > a {
+.navbar .nav > li > a,
+.navbar .menu > li > a {
   float: none;
   // Vertically center the text given $navbarHeight
   $elementHeight: 20px;
@@ -222,7 +226,8 @@
   padding: (($navbarHeight - $elementHeight) / 2 - 1) 5px (($navbarHeight - $elementHeight) / 2);
 }
 // Hover
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover,
+.navbar .menu > li > a:hover {
   background-color: $navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
   color: $navbarLinkColorHover;
   text-decoration: none;
@@ -230,7 +235,9 @@
 
 // Active nav items
 .navbar .nav .active > a,
-.navbar .nav .active > a:hover {
+.navbar .nav .active > a:hover,
+.navbar .menu .active > a,
+.navbar .menu .active > a:hover {
   color: $navbarLinkColorActive;
   text-decoration: none;
   background-color: $navbarLinkBackgroundActive;
@@ -247,7 +254,8 @@
 }
 
 // Secondary (floated right) nav in topbar
-.navbar .nav.pull-right {
+.navbar .nav.pull-right,
+.navbar .menu.pull-right {
   margin-left: 10px;
   margin-right: 0;
 }
@@ -321,10 +329,13 @@
 }
 // Dropdown toggle caret
 .navbar .nav li.dropdown .dropdown-toggle .caret,
-.navbar .nav li.dropdown.open .caret {
+.navbar .nav li.dropdown.open .caret,
+.navbar .menu li.dropdown .dropdown-toggle .caret,
+.navbar .menu li.dropdown.open .caret {
   border-top-color: $white;
   border-bottom-color: $white;
 }
+.navbar .nav li.dropdown.active .caret,
 .navbar .nav li.dropdown.active .caret {
   @include opacity(100);
 }
@@ -332,12 +343,16 @@
 // Remove background color from open dropdown
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+.navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar .menu li.dropdown.open > .dropdown-toggle,
+.navbar .menu li.dropdown.active > .dropdown-toggle,
+.navbar .menu li.dropdown.open.active > .dropdown-toggle {
   background-color: transparent;
 }
 
 // Dropdown link on hover
-.navbar .nav li.dropdown.active > .dropdown-toggle:hover {
+.navbar .nav li.dropdown.active > .dropdown-toggle:hover,
+.navbar .menu li.dropdown.active > .dropdown-toggle:hover {
   color: $white;
 }
 
