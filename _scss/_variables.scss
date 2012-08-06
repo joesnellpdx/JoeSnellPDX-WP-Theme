@@ -27,12 +27,14 @@ $green:                 #46a546 !default;
 $red:                   #9d261d !default;
 $yellow:                #ffc40d !default;
 $orange:                #f89406 !default;
+$joeorange:				#ff8800 !default;
 $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
 
 // Scaffolding
 // -------------------------
+$landingBackground:		$white !default;
 $bodyBackground:        $white !default;
 $textColor:             $grayDark !default;
 
@@ -143,12 +145,12 @@ $hrBorder:                $grayLighter !default;
 
 // Navbar
 // -------------------------
-$navbarHeight:                    40px !default;
-$navbarBackground:                $grayDarker !default;
-$navbarBackgroundHighlight:       $grayDark !default;
+$navbarHeight:                    50px !default;
+$navbarBackground:                $joeorange !default;
+$navbarBackgroundHighlight:       $joeorange !default;
 
 $navbarText:                      $grayLight !default;
-$navbarLinkColor:                 $grayLight !default;
+$navbarLinkColor:                 $white !default;
 $navbarLinkColorHover:            $white !default;
 $navbarLinkColorActive:           $navbarLinkColorHover !default;
 $navbarLinkBackgroundHover:       transparent !default;
@@ -159,6 +161,8 @@ $navbarSearchBackgroundFocus:     $white !default;
 $navbarSearchBorder:              darken($navbarSearchBackground, 30%) !default;
 $navbarSearchPlaceholderColor:    #ccc !default;
 $navbarBrandColor:                $navbarLinkColor !default;
+
+$elementHeight:					  50px !default;
 
 
 // Hero unit

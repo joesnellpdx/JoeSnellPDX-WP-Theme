@@ -7,7 +7,7 @@
 
 <section id="multiPosts">
 <div class="row">
-<div class="span8">
+<div class="span12">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'joesnellpdx' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -65,7 +65,7 @@
 </article><!-- #post-<?php the_ID(); ?> -->
 </div> <!-- span8 -->
 <div class="span4">
-	 <?php get_sidebar(); ?>
+	 <?php //get_sidebar(); ?>
 </div>
 </div> <!-- row -->
 </section>

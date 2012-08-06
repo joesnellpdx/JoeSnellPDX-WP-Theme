@@ -59,90 +59,41 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
-<body data-spy="scroll" data-target=".subnav" data-offset="50" <?php body_class(); ?>>
+<body data-spy="scroll" data-target=".subnav" data-offset="50" <?php body_class('landingbody'); ?>>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->	
 
-  <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-        	
-          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          
-          <img class="brand" src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" height="25" width="25" />
-          <a class="brand" href="<?php the_permalink(); ?>"><?php wp_title( " " ); ?></a>
-          
-          <div class="nav-collapse collapse">
-            
-            	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        	
-            <!-- <ul class="nav">
-               <li class="active">
-                <a href="./index.html">Overview</a>
-              </li>
-              <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
-              </li>
-              <li class="">
-                <a href="./base-css.html">Base CSS</a>
-              </li>
-              <li class="">
-                <a href="./components.html">Components</a>
-              </li>
-              <li class="">
-                <a href="./javascript.html">Javascript plugins</a>
-              </li>
-              <li class="">
-                <a href="./less.html">Using LESS</a>
-              </li>
-              <li class="divider-vertical"></li>
-              <li class="">
-                <a href="./download.html">Customize</a>
-              </li>
-              <li class="">
-                <a href="./examples.html">Examples</a>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-<!-- END Navbar
-    ================================================== -->
     
     <div class="container">
 
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<!-- <header id="masthead" class="jumbotron masthead site-header" role="banner">
-		<div class="inner">
+    
+	<header id="masthead" class="jumbotron masthead site-header" role="banner">
+		<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+       
         <hgroup>
-			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><h1><?php bloginfo( 'name' ); ?></h1></a>
-			<p><?php bloginfo( 'description' ); ?></p>
-            <p class="download-info">
-       <a href="https://github.com/joesnellpdx/JoeSnellPDX-WP-Theme" target="_blank" class="btn btn-primary btn-large" >View project on GitHub</a>
-      <a href="http://www.joesnellpdx.com/posts/" target="_blank" class="btn btn-large" >View Posts <small>(More on the Way)</small></a>
-    </p> 
+			<div class="logo-head">
+            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://www.joesnellpdx.com/wp-content/uploads/2012/07/Joe-Snell-Logowhite.png" alt="Joe Snell PDX Logo" width="100%" /></a>
+            </div> <!-- .logo-head -->
+            <h1 class="brand"><?php bloginfo( 'name' ); ?></br>
+			<span class="sub-head"><?php bloginfo( 'description' ); ?></span></h1>
+    <div class="landingmenu"><?php wp_nav_menu( array( 'theme_location' => 'landing' ) ); ?></div>
 		</hgroup>
        
         </div>  <!-- .inner -->
+        </div>  <!-- navbar -->
 
 		<!-- <div class="bs-links">
         <nav role="navigation" class="site-navigation main-navigation">
 			<h4 class="assistive-text quick-links"><?php _e( 'Menu', 'joesnellpdx' ); ?></h4>
 			<div class="assistive-text skip-link quick-links"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'joesnellpdx' ); ?>"><?php _e( 'Skip to content', 'joesnellpdx' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
+			 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
 		</nav>
         </div> <!-- .bs-links -->
-	<!--</header><!-- #masthead .site-header --> 
+	<!--</header><!-- #masthead .site-header 
 
 	<div id="main">

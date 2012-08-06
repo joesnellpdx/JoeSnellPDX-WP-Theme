@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php _s_content_nav( 'nav-above' ); ?>
+				<?php //_s_content_nav( 'nav-above' ); ?> 
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php _s_content_nav( 'nav-below' ); ?>
+				<?php //_s_content_nav( 'nav-below' ); ?> 
 
 			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 

@@ -8,7 +8,7 @@
 
     // Disable certain links in docs
     $('section [href^=#]').click(function (e) {
-      e.preventDefault()
+      e.preventDefault();
     })
 
     // make code pretty
@@ -180,5 +180,8 @@ $.ajaxTransport('jsonpi', function(opts, originalOptions, jqXHR) {
     }
   }
 })
+
+$(".landingmenu").find("li").addClass("btn btn-large btn-inverse landing-button");
+$(".landingmenu").find( "ul" ).css('margin', '0px');
 
 }(window.jQuery)

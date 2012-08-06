@@ -21,7 +21,7 @@
   }
   .navbar-fixed-top .navbar-inner,
   .navbar-fixed-bottom .navbar-inner {
-    padding: 5px;
+    padding: 0px;
   }
   .navbar .container {
     width: auto;
@@ -29,8 +29,7 @@
   }
   // Account for brand name
   .navbar .brand {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 7px 20px;
     margin: 0 0 0 -5px;
   }
 

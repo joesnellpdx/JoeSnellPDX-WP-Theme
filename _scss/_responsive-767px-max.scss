@@ -40,6 +40,27 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  
+  // JOE ADD
+  .landingmenu .btn {
+	display: block;
+    font-size: 18px;
+	line-height: 8em;
+    padding: 10px 14px;
+    margin: 1%;
+	@include box-sizing(border-box);
+	width:48%;
+	float:left;
+  }
+  .landingmenu .btn a,
+  .landingmenu .btn a:hover {
+	color: $white;
+	text-decoration: none;
+  }
+  .landingbody {
+	  background: $landingBackground;
+  }
+
 
   // Modals
   .modal {
@@ -62,8 +83,6 @@
   }
 
 }
-
-
 
 // LANDSCAPE PHONE TO SMALL DESKTOP & PORTRAIT TABLET
 // --------------------------------------------------

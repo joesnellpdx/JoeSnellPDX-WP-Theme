@@ -108,10 +108,16 @@ ol {
 li {
   line-height: $baseLineHeight;
 }
+
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
+}
+
+.landingmenu ul,
+.landingmenu ol {
+	margin: 0 0 0 0;
 }
 
 // Description Lists

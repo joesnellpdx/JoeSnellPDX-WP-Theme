@@ -65,11 +65,12 @@ function _s_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	/**
-	 * This theme uses wp_nav_menu() in two locations.
+	 * This theme uses wp_nav_menu() in multiple locations.
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'joesnellpdx' ),
 		'secondary' => __( 'Secondary Menu', 'joesnellpdx' ),
+		'landing' => __( 'Landing Menu', 'joesnellpdx' ),
 	) );
 
 	/**
@@ -105,11 +106,13 @@ function _s_scripts() {
 
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/_css/bs.css', '20120622' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/_css/bootstrap.css', '20120622' );
 	
-	wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . '/_css/bsrs.css', '20120622' );
+	wp_enqueue_style( 'bootstrap-responsive', get_template_directory_uri() . '/_css/responsive.css', '20120622' );
 	
-	wp_enqueue_style( 'docs', get_template_directory_uri() . '/_css/docs.css', '20120622' );
+	// use specific bootstrapp css file docs.css with style overrides
+	 wp_enqueue_style( 'docs', get_template_directory_uri() . '/_css/docs.css', '20120622' );
+	
 	
 	wp_enqueue_style( 'prettify', get_template_directory_uri() . '/_js/google-code-prettify/prettify.css', '20120622' );
 
